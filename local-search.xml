@@ -4,6 +4,25 @@
   
   
   <entry>
+    <title>博客介绍</title>
+    <link href="/2022/09/05/%E5%8D%9A%E5%AE%A2%E4%BB%8B%E7%BB%8D/"/>
+    <url>/2022/09/05/%E5%8D%9A%E5%AE%A2%E4%BB%8B%E7%BB%8D/</url>
+    
+    <content type="html"><![CDATA[<p>没想到这里也是使用YAML的，方便极了</p><p>不过这可能是因为主题的缘故</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>入门</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Hello World</title>
     <link href="/2022/09/05/hello-world/"/>
     <url>/2022/09/05/hello-world/</url>
