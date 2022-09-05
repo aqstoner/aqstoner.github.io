@@ -23,24 +23,30 @@
   
   
   <entry>
-    <title>Hello World</title>
-    <link href="/2022/09/05/hello-world/"/>
-    <url>/2022/09/05/hello-world/</url>
+    <title>Aqstoner的博客</title>
+    <link href="/2022/09/05/Aqstoner%E7%9A%84%E5%8D%9A%E5%AE%A2/"/>
+    <url>/2022/09/05/Aqstoner%E7%9A%84%E5%8D%9A%E5%AE%A2/</url>
     
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+    <content type="html"><![CDATA[<h1 id="Aqstoner的博客"><a href="#Aqstoner的博客" class="headerlink" title="Aqstoner的博客"></a>Aqstoner的博客</h1><p>对于学生，其学习目标多为长期的，从小学、高中、大学，几年乃至十几年，为了能够长久的坚持，需要有一定的正向激励——零食、玩具、他人的认可与夸奖，写博客分享知识一般属于第三种。</p><p>本博客基于Github Page——静态站点托管服务，作为学习中的输出部分，其目的为获得学习的正向反馈激励。</p><p>我认为<strong>笔记不等于博客</strong>。笔记的主要功能是<strong>辅助自己进行思考，记录则是其次</strong>。而博客则是将知识分享给其他人。我的方法是，学习的过程中思考并记笔记，在一定阶段的学习结束之后，再总结成博客并进行分享。</p><p>再者，博客不应该等于<strong>知识点的摘录、汇总</strong>，不如说博客的重点不在知识点，而是<strong>对知识按照个人的想法进行解释和总结</strong>，毕竟想阅读知识点直接去阅读相关书籍即可，写博客是需要花费时间的，我并不想将有限的时间花费在排列知识点上。因此，<strong>我的博客将会有浓厚的个人风格</strong>。</p><hr><p>推荐：<a href="https://zhuanlan.zhihu.com/p/429109281">通信笔&#x2F;面试题 （2）香农公式 - 知乎</a>，该文章从香浓公式说开，衍生到信息论、通信原理、概率论，摘录了多本书籍的相关知识片段，并加上了自己的说明和理解，个人觉得非常不错。</p>]]></content>
     
     
+    
+    <tags>
+      
+      <tag>入门</tag>
+      
+    </tags>
     
   </entry>
   
   
   
   <entry>
-    <title></title>
-    <link href="/2022/09/01/index/"/>
-    <url>/2022/09/01/index/</url>
+    <title>Hello World</title>
+    <link href="/2022/09/05/hello-world/"/>
+    <url>/2022/09/05/hello-world/</url>
     
-    <content type="html"><![CDATA[<h1 id="Aqstoner的博客"><a href="#Aqstoner的博客" class="headerlink" title="Aqstoner的博客"></a>Aqstoner的博客</h1><p>对于学生，其学习目标多为长期的，从小学、高中、大学，几年乃至十几年，为了能够长久的坚持，需要有一定的正向激励——零食、玩具、他人的认可与夸奖，写博客分享知识一般属于第三种。</p><p>本博客基于Github Page——静态站点托管服务，作为学习中的输出部分，其目的为获得学习的正向反馈激励。</p><p>我认为<strong>笔记不等于博客</strong>。笔记的主要功能是<strong>辅助自己进行思考，记录则是其次</strong>。而博客则是将知识分享给其他人。我的方法是，学习的过程中思考并记笔记，在一定阶段的学习结束之后，再总结成博客并进行分享。</p><p>再者，博客不应该等于<strong>知识点的摘录、汇总</strong>，不如说博客的重点不在知识点，而是<strong>对知识按照个人的想法进行解释和总结</strong>，毕竟想阅读知识点直接去阅读相关书籍即可，写博客是需要花费时间的，我并不想将有限的时间花费在排列知识点上。因此，<strong>我的博客将会有浓厚的个人风格</strong>。</p><hr><p>推荐：<a href="https://zhuanlan.zhihu.com/p/429109281">通信笔&#x2F;面试题 （2）香农公式 - 知乎</a>，该文章从香浓公式说开，衍生到信息论、通信原理、概率论，摘录了多本书籍的相关知识片段，并加上了自己的说明和理解，个人觉得非常不错。</p>]]></content>
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
     
     
     
