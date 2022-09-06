@@ -5,8 +5,8 @@
   
   <entry>
     <title>博客建站教程</title>
-    <link href="/aqstoner/aqstoner.github.io/2022/09/06/%E5%8D%9A%E5%AE%A2%E5%BB%BA%E7%AB%99%E6%95%99%E7%A8%8B/"/>
-    <url>/aqstoner/aqstoner.github.io/2022/09/06/%E5%8D%9A%E5%AE%A2%E5%BB%BA%E7%AB%99%E6%95%99%E7%A8%8B/</url>
+    <link href="/2022/09/06/%E5%8D%9A%E5%AE%A2%E5%BB%BA%E7%AB%99%E6%95%99%E7%A8%8B/"/>
+    <url>/2022/09/06/%E5%8D%9A%E5%AE%A2%E5%BB%BA%E7%AB%99%E6%95%99%E7%A8%8B/</url>
     
     <content type="html"><![CDATA[<p>我基本没有前端方面的知识，搭建博客都是按着网络教程进行，很多概念也并不理解，所以这里只记录一下我在搭建过程中的一些经验。</p><p>技术栈</p><ul><li>Git</li><li>github</li><li>github pages</li><li>Hexo</li><li>GitHub Actions</li><li>html、css、web等前端的一些基础知识</li></ul><p>根据这些关键词可以自行搜索相关资料。</p><p>在几个月前我已经在腾讯云上购买好了轻量云服务器和个人域名，并且用wordpress框架+sakura主题初步配置好了博客网站。而后舍弃了，原因如下：</p><ol><li>我了解到了Github Pages，比起wordpress，它对Markdown文件的支持更加优秀，而且还能够和Github相结合</li><li>云服务器我还是想用来装Linux系统折腾些别的项目，而非是单纯用来挂博客</li></ol><h2 id="部署Hexo"><a href="#部署Hexo" class="headerlink" title="部署Hexo"></a>部署Hexo</h2><p>参考：<a href="https://www.bilibili.com/video/BV1mU4y1j72n">【2021最新版】保姆级Hexo+github搭建个人博客_哔哩哔哩_bilibili</a></p><p>虽然<strong>官方文档最权威</strong>，但是当前我没有足够的知识去理解官方文档里面的说明，所以最好跟着<strong>时间较近的视频类教程部署</strong>。</p><p>下面只大致说下我在跟着这个教程的时候遇到的坑</p><blockquote><p>当然这部分也可以直接看<a href="https://hexo.io/zh-cn/docs/setup">官方文档</a></p></blockquote><ol><li>安装node.js：注意官网文档里面有列举”<strong>Node.js 版本限制</strong>“，不推荐版本太老，我装的是node-v16.17.0-x64，在2022年9月5日属于当前稳定版本。安装教程很多，自己找。重点：最后配置<code>node_global</code>和<code>node_cache</code>文件夹。其实环境变量配置熟练了也很简单。然后有个坑，后续在cmd中用npm指令安装测试失败，原因是权限不够，cmd要用管理员权限打开。</li><li>安装git：很早就安装好了，不记录</li><li>github仓库：完成，坑：<code>git push origin master</code>与<code>git push origin main</code>，我的主支是main，很多时间较老的教程，主支是master，注意区分。(这是因为Github更新了默认主支)</li><li>hexo本地部署：<code>hexo init</code>需要在空文件夹中进行，同时视频教程里面使用的是git Bash，个人推荐还是使用<strong>管理员模式打开的cmd来完成</strong>，然后我直接使用魔法下载，所以不考虑换源。</li><li>我<code>hexo init</code>完，后续的指令全是在hexo部署的文件夹路径下完成的</li></ol><p>后面我再参考了：<a href="https://blog.csdn.net/yaorongke/article/details/119089190#Hexo_53">GitHub Pages + Hexo搭建个人博客网站，史上最全教程_淡淡的说非的博客-CSDN博客</a>，文字版教程，<code>Fluid</code>主题比较喜欢</p><p>然后推荐下这个教程：<a href="https://www.bilibili.com/video/BV1A4411G7SF">hexo和github搭建个人博客快速教程</a>，推荐的原因：<strong>小姐姐声音甜美</strong>。</p><p>这里我提一下，我见到有些教程是说随意命名一个仓库，然后设置成github pages，但是还有一些教程说仓库的命名一定要是<code>username.github.io</code>，我是按照后面的方式进行，没有详细了解造成这种差异的原因，个人还是推荐按照后者的方式进行。</p><p><img src="https://cdn.jsdelivr.net/gh/aqstoner/AqstonerBookAssets@latest/img/202209060936830.png"></p><p>我的本地博客文件夹如上图，文件夹的名称是<code>aqstoner.github.io</code>就是仓库名，然后和github的仓库之间联动有两种方式：</p><ol><li>token</li><li>ssh</li></ol><p>有的教程用方式1，有的用方式2，使用其中一种即可，我采取的是后者，至于两个方式的详细步骤和相关知识，自行搜索解决。</p><h2 id="自定义主题"><a href="#自定义主题" class="headerlink" title="自定义主题"></a>自定义主题</h2><p>虽说是自定义主题，也就是看看Fluid的官网文档，然后按照它的讲解改下配置文件而已，毕竟我也不怎么会css和html</p><h2 id="Hexo写博客"><a href="#Hexo写博客" class="headerlink" title="Hexo写博客"></a>Hexo写博客</h2><p>关于这个主要看Hexo的官方文档，最基本的就是掌握这几个指令</p><ol><li><code>hexo g</code></li><li><code>hexo s</code></li><li><code>hexo d</code></li><li><code>hexo g -d</code></li><li><code>hexo clean</code></li><li><code>hexo new post &quot;title&quot;</code></li><li><code>hexo new page &quot;title&quot;</code></li></ol>]]></content>
     
@@ -24,8 +24,8 @@
   
   <entry>
     <title>Aqstoner的博客</title>
-    <link href="/aqstoner/aqstoner.github.io/2022/09/05/Aqstoner%E7%9A%84%E5%8D%9A%E5%AE%A2/"/>
-    <url>/aqstoner/aqstoner.github.io/2022/09/05/Aqstoner%E7%9A%84%E5%8D%9A%E5%AE%A2/</url>
+    <link href="/2022/09/05/Aqstoner%E7%9A%84%E5%8D%9A%E5%AE%A2/"/>
+    <url>/2022/09/05/Aqstoner%E7%9A%84%E5%8D%9A%E5%AE%A2/</url>
     
     <content type="html"><![CDATA[<p>对于学生，其学习目标多为长期的，从小学、高中、大学，几年乃至十几年，为了能够长久的坚持，需要有一定的正向激励——零食、玩具、他人的认可与夸奖，写博客分享知识一般属于第三种。</p><p>本博客基于Github Page——静态站点托管服务，作为学习中的输出部分，其目的为获得学习的正向反馈激励。</p><p>我认为<strong>笔记不等于博客</strong>。笔记的主要功能是<strong>辅助自己进行思考，记录则是其次</strong>。而博客则是将知识分享给其他人。我的方法是，学习的过程中思考并记笔记，在一定阶段的学习结束之后，再总结成博客并进行分享。</p><p>再者，博客不应该等于<strong>知识点的摘录、汇总</strong>，不如说博客的重点不在知识点，而是<strong>对知识按照个人的想法进行解释和总结</strong>，毕竟想阅读知识点直接去阅读相关书籍即可，写博客是需要花费时间的，我并不想将有限的时间花费在排列知识点上。因此，<strong>我的博客将会有浓厚的个人风格</strong>。</p><hr><p>推荐：<a href="https://zhuanlan.zhihu.com/p/429109281">通信笔&#x2F;面试题 （2）香农公式 - 知乎</a>，该文章从香浓公式说开，衍生到信息论、通信原理、概率论，摘录了多本书籍的相关知识片段，并加上了自己的说明和理解，个人觉得非常不错。</p>]]></content>
     
