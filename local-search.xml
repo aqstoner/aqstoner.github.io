@@ -4,6 +4,19 @@
   
   
   <entry>
+    <title>线性代数学习</title>
+    <link href="/2022/09/09/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E5%AD%A6%E4%B9%A0/"/>
+    <url>/2022/09/09/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E5%AD%A6%E4%B9%A0/</url>
+    
+    <content type="html"><![CDATA[<p>相关的书籍：</p><ul><li>矩阵的分析与应用, 张贤达</li><li>Introduction to Linear Algebra, Gilbert Strang</li><li>linear algebra second edition, Hoffman</li><li>linear algebra done right 3rd edition, Axler</li><li>Linear Algebra and Its Applications, David Lay</li><li>Linear Algebra Done Right, Sheldon Axler</li></ul><p>新的工具，建立了代数和<a href="app://obsidian.md/向量">向量</a>之间的关系。线性代数的研究对象：<a href="app://obsidian.md/向量">向量</a>、<a href="app://obsidian.md/向量">向量</a>空间，线性变换，有限维的线性方程组，广泛地用于抽象代数和泛函分析</p><blockquote><p>离散数学以离散量的结构和相互间的关系为主要目标，其研究对象一般是有限个元素，主要包含数理逻辑，集合论，代数结构，布尔代数，<a href="app://obsidian.md/图论介绍">图论介绍</a>。</p></blockquote><p>主要以《矩阵的分析与应用》为主，其它外语书籍作为辅助。</p><p>目录：</p><ol><li>矩阵与线性方程组</li><li>特殊矩阵</li><li>Toeplitz矩阵</li><li>矩阵的变换与分解</li><li>梯度分析与最优化</li><li>奇异值分析</li><li>总体最小二乘方法</li><li>特征分析</li><li>子空间分析与跟踪</li><li>投影分析</li></ol>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>win10神器篇</title>
     <link href="/2022/09/08/win10%E7%A5%9E%E5%99%A8%E7%AF%87/"/>
     <url>/2022/09/08/win10%E7%A5%9E%E5%99%A8%E7%AF%87/</url>
@@ -222,7 +235,7 @@
     <link href="/2022/09/05/Aqstoner%E7%9A%84%E5%8D%9A%E5%AE%A2/"/>
     <url>/2022/09/05/Aqstoner%E7%9A%84%E5%8D%9A%E5%AE%A2/</url>
     
-    <content type="html"><![CDATA[<h3 id="博客的作用"><a href="#博客的作用" class="headerlink" title="博客的作用"></a>博客的作用</h3><p>对于学生，其学习目标多为长期的，从小学、高中、大学，几年乃至十几年，为了能够长久的坚持，需要有一定的正向激励，可以分为物质上的激励和精神上的激励。写博客属于后者，意在<strong>把你自己的思考或结论处理成系统化的、可输出的文字，并在公开场合输出，从而获得他人的评价和认可。</strong></p><p>本博客基于Github Page——静态站点托管服务，作为学习中的输出部分，其目的为获得学习的正向反馈激励。</p><h3 id="博客的内容"><a href="#博客的内容" class="headerlink" title="博客的内容"></a>博客的内容</h3><p>我认为<strong>笔记不等于博客</strong>。笔记的主要功能是<strong>辅助自己进行思考，记录则是其次</strong>。而博客则是将知识分享给其他人。我的方法是，学习的过程中思考并记笔记，在一定阶段的学习结束之后，再总结成博客并进行分享。</p><p>再者，博客不应该等于<strong>知识点的摘录、汇总</strong>，不如说博客的重点不在知识点，而是<strong>对知识按照个人的想法进行解释和总结</strong>，毕竟想阅读知识点直接去阅读相关书籍即可，写博客是需要花费时间的，我并不想将有限的时间花费在排列知识点上。因此，<strong>我的博客将会有浓厚的个人风格</strong>。</p><p>博客文章推荐：<a href="https://zhuanlan.zhihu.com/p/429109281">通信笔&#x2F;面试题 （2）香农公式 - 知乎</a>，该文章从香浓公式说开，衍生到信息论、通信原理、概率论，摘录了多本书籍的相关知识片段，并加上了自己的说明和理解，个人觉得非常不错。</p><h3 id="博客的管理"><a href="#博客的管理" class="headerlink" title="博客的管理"></a>博客的管理</h3><p>更新速度：尽量保持在一周1~2篇更新</p><p>分类：直接按照学科领域来进行分类</p><p>标签：不属于学科领域的关键词都可以视作标签</p><blockquote><p>关于分类和标签的使用方式其实牵扯到知识管理的一个关键问题，如果对知识管理感兴趣的可以多了解。</p></blockquote><p><strong>本博客还处于内测期，文档、网页都还不怎么完善，而且我会随意更新文章，渐渐摸索</strong></p>]]></content>
+    <content type="html"><![CDATA[<h3 id="博客的作用"><a href="#博客的作用" class="headerlink" title="博客的作用"></a>博客的作用</h3><p>对于学生，其学习目标多为长期的，从小学、高中、大学，几年乃至十几年，为了能够长久的坚持，需要有一定的正向激励，可以分为物质上的激励和精神上的激励。写博客属于后者，意在<strong>把你自己的思考或结论处理成系统化的、可输出的文字，并在公开场合输出，从而获得他人的评价和认可。</strong></p><p>本博客基于Github Page——静态站点托管服务，作为学习中的输出部分，其目的为获得学习的正向反馈激励。</p><h3 id="博客的内容"><a href="#博客的内容" class="headerlink" title="博客的内容"></a>博客的内容</h3><p>我认为<strong>笔记不等于博客</strong>。笔记的主要功能是<strong>辅助自己进行思考，记录则是其次</strong>。而博客则是将知识分享给其他人。我的方法是，学习的过程中思考并记笔记，在一定阶段的学习结束之后，再总结成博客并进行分享。</p><p>再者，博客不应该等于<strong>知识点的摘录、汇总</strong>，不如说博客的重点不在知识点，而是<strong>对知识按照个人的想法进行解释和总结</strong>，毕竟想阅读知识点直接去阅读相关书籍即可，写博客是需要花费时间的，我并不想将有限的时间花费在排列知识点上。因此，<strong>我的博客将会有浓厚的个人风格</strong>。</p><p>博客文章推荐：<a href="https://zhuanlan.zhihu.com/p/429109281">通信笔&#x2F;面试题 （2）香农公式 - 知乎</a>，该文章从香浓公式说开，衍生到信息论、通信原理、概率论，摘录了多本书籍的相关知识片段，并加上了自己的说明和理解，个人觉得非常不错。</p><h3 id="博客的管理"><a href="#博客的管理" class="headerlink" title="博客的管理"></a>博客的管理</h3><p>更新速度：尽量保持在一周1~2篇更新</p><p>分类：直接按照学科领域来进行分类</p><p>标签：不属于学科领域的关键词都可以视作标签</p><blockquote><p>关于分类和标签的使用方式其实牵扯到知识管理的一个关键问题，如果对知识管理感兴趣的可以多了解。</p></blockquote><p><strong>本博客还处于内测期，文档、网页都还不怎么完善，而且我会随意更新文章，渐渐摸索</strong></p><h3 id="博客导航"><a href="#博客导航" class="headerlink" title="博客导航"></a>博客导航</h3>]]></content>
     
     
     <categories>
