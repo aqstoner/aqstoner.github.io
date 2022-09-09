@@ -11,6 +11,12 @@
     <content type="html"><![CDATA[<p>相关的书籍：</p><ul><li>矩阵的分析与应用, 张贤达</li><li>Introduction to Linear Algebra, Gilbert Strang</li><li>linear algebra second edition, Hoffman</li><li>linear algebra done right 3rd edition, Axler</li><li>Linear Algebra and Its Applications, David Lay</li><li>Linear Algebra Done Right, Sheldon Axler</li></ul><p>新的工具，建立了代数和<a href="app://obsidian.md/向量">向量</a>之间的关系。线性代数的研究对象：<a href="app://obsidian.md/向量">向量</a>、<a href="app://obsidian.md/向量">向量</a>空间，线性变换，有限维的线性方程组，广泛地用于抽象代数和泛函分析</p><blockquote><p>离散数学以离散量的结构和相互间的关系为主要目标，其研究对象一般是有限个元素，主要包含数理逻辑，集合论，代数结构，布尔代数，<a href="app://obsidian.md/图论介绍">图论介绍</a>。</p></blockquote><p>主要以《矩阵的分析与应用》为主，其它外语书籍作为辅助。</p><p>目录：</p><ol><li>矩阵与线性方程组</li><li>特殊矩阵</li><li>Toeplitz矩阵</li><li>矩阵的变换与分解</li><li>梯度分析与最优化</li><li>奇异值分析</li><li>总体最小二乘方法</li><li>特征分析</li><li>子空间分析与跟踪</li><li>投影分析</li></ol>]]></content>
     
     
+    <categories>
+      
+      <category>数学</category>
+      
+    </categories>
+    
     
   </entry>
   
