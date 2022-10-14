@@ -25,7 +25,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://aqstoner.github.io/img/view/2.jpg">
 <meta property="article:published_time" content="2022-10-14T13:34:17.000Z">
-<meta property="article:modified_time" content="2022-10-14T13:35:07.170Z">
+<meta property="article:modified_time" content="2022-10-14T13:44:55.949Z">
 <meta property="article:author" content="Aqstoner">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://aqstoner.github.io/img/view/2.jpg">
@@ -299,7 +299,7 @@
               <p class="note note-info">
                 
                   
-                    本文最后更新于：5 分钟前
+                    本文最后更新于：1 分钟前
                   
                 
               </p>
@@ -321,7 +321,7 @@
 </ul>
 <p>很好的视频教程：<br><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1G34y1d7m4/?spm_id_from=333.337.search-card.all.click&vd_source=9612034d0f48635537c4c7011020bbb0">升压电路原理</a></p>
 <h3 id="经典的拓扑"><a href="#经典的拓扑" class="headerlink" title="经典的拓扑"></a>经典的拓扑</h3><p><strong>经典BUCK</strong></p>
-<p><img src="https://cdn.jsdelivr.net/gh/aqstoner/AqstonerBookAssets@latest/img/202207180914427.png" srcset="/img/loading.gif" lazyload alt="|500"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/aqstoner/AqstonerBookAssets@latest/img/202207180914427.png" srcset="/img/loading.gif" lazyload></p>
 <ol>
 <li>从MOS的通断两个状态去分析</li>
 <li>重点把握住<ol>
@@ -334,7 +334,7 @@
 <p>当 Up 为高时，Q1 到导通，D1 反向截止；直流电 Ui 通过 Q1 为电感 L1 储能并为负载提供能量，这一过程中由于 Ui＞Uo,Ui-Uo 的电压加在电感上，在电感没有饱和前，电感电流线性增加，电感储能；</p>
 <p>当 Up 为低时，Q1 截止，电感电流线性减少，由楞次定律可以电感 L1 上会产生一个“右正左负”的感应电动势，此时电感 L1 电容 CE2 释放能量通过整流二极管为负载供电，整流二极管正向导通。</p>
 <p>下面是对应的电流的波形：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/aqstoner/AqstonerBookAssets@latest/img/202207180914678.png" srcset="/img/loading.gif" lazyload alt="|500"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/aqstoner/AqstonerBookAssets@latest/img/202207180914678.png" srcset="/img/loading.gif" lazyload></p>
 <ul>
 <li>关于连续工作和不连续工作？</li>
 <li>那么输出的电流对应的电压的波形呢？为什么流过电感的电流不能突变，所以负载的电压是逐步增大的呢？根据欧姆定律，也就是这里&#x3D;&#x3D;会把负载看作一个线性的电阻器件&#x3D;&#x3D;</li>
@@ -342,7 +342,7 @@
 <li>为什么要加一个二极管呢？可以在通断的时候方便将左右两边的电路隔离开来</li>
 </ul>
 <p><strong>经典BOOST</strong></p>
-<p><img src="https://cdn.jsdelivr.net/gh/aqstoner/AqstonerBookAssets@latest/img/202203310819869.png" srcset="/img/loading.gif" lazyload alt="|450"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/aqstoner/AqstonerBookAssets@latest/img/202203310819869.png" srcset="/img/loading.gif" lazyload></p>
 <p><strong>经典的BUCK-BOOST</strong></p>
 <p><img src="https://cdn.jsdelivr.net/gh/aqstoner/AqstonerBookAssets@latest/img/202203311719565.png" srcset="/img/loading.gif" lazyload></p>
 <p>结论：闭合的时间更长，类似于BOOST，会升压，断开的时间更长，类似于BUCK，会降压</p>
@@ -399,12 +399,12 @@
 <li>但是电源开关时的尖峰，动态电阻变化时产生的脉冲都可能会导致电压瞬间上升从而可能烧坏芯片</li>
 </ul>
 <p>元器件的选型主要有输入电容值，芯片选型，电感值，输出电容值四个方面，为了整体性能达到最佳，最好是固定输入输出，这样才能计算出最佳的参数，这些计算公式如下</p>
-<p><img src="https://cdn.jsdelivr.net/gh/aqstoner/AqstonerBookAssets@latest/img/202204271748042.png" srcset="/img/loading.gif" lazyload alt="|500"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/aqstoner/AqstonerBookAssets@latest/img/202204271748042.png" srcset="/img/loading.gif" lazyload></p>
 <blockquote>
-<p>关于动态响应：修改前馈电容改善动态响应度，把电感变小一点也可以<br><img src="https://cdn.jsdelivr.net/gh/aqstoner/AqstonerBookAssets@latest/img/202204271748050.png" srcset="/img/loading.gif" lazyload alt="|500"></p>
+<p>关于动态响应：修改前馈电容改善动态响应度，把电感变小一点也可以<br><img src="https://cdn.jsdelivr.net/gh/aqstoner/AqstonerBookAssets@latest/img/202204271748050.png" srcset="/img/loading.gif" lazyload></p>
 </blockquote>
 <p> 下面是DC-DC开关电源和别的类型的直流电源的比较</p>
-<p><img src="https://cdn.jsdelivr.net/gh/aqstoner/AqstonerBookAssets@latest/img/202204271748051.jpg" srcset="/img/loading.gif" lazyload alt="|500"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/aqstoner/AqstonerBookAssets@latest/img/202204271748051.jpg" srcset="/img/loading.gif" lazyload></p>
 <h3 id="TPS54560芯片"><a href="#TPS54560芯片" class="headerlink" title="TPS54560芯片"></a>TPS54560芯片</h3><p>16-25元</p>
 <p><a target="_blank" rel="noopener" href="https://so.szlcsc.com/global.html?k=TPS54560&hot-key=0603B105K500NT">TPS54560_TPS54560采购信息-立创电子元器件商城 (szlcsc.com)</a></p>
 <p><a target="_blank" rel="noopener" href="https://www.ti.com.cn/product/zh-cn/TPS54560?keyMatch=TPS54560&tisearch=search-everything&usecase=GPN">TPS54560 数据表、产品信息和支持 | 德州仪器 TI.com.cn</a></p>
@@ -414,11 +414,11 @@
 <li><p>方案：在Vin min&#x3D;24V、Vout&#x3D;5V、Iout max&#x3D;5A的情况下</p>
 </li>
 </ul>
-<p><img src="https://cdn.jsdelivr.net/gh/aqstoner/AqstonerBookAssets@latest/img/202203131313978.png" srcset="/img/loading.gif" lazyload alt="|500"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/aqstoner/AqstonerBookAssets@latest/img/202203131313978.png" srcset="/img/loading.gif" lazyload></p>
 <ul>
 <li>测试曲线</li>
 </ul>
-<p><img src="https://cdn.jsdelivr.net/gh/aqstoner/AqstonerBookAssets@latest/img/202203131313192.png" srcset="/img/loading.gif" lazyload alt="|500"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/aqstoner/AqstonerBookAssets@latest/img/202203131313192.png" srcset="/img/loading.gif" lazyload></p>
 <p><a target="_blank" rel="noopener" href="https://www.ti.com.cn/">模拟 | 嵌入式处理 | 半导体公司 | 德州仪器 TI.com.cn</a></p>
 <p><a target="_blank" rel="noopener" href="https://www.analog.com/cn/index.html">ADI | 混合信号和数字信号处理IC | 亚德诺半导体 (analog.com)</a></p>
 <p><a target="_blank" rel="noopener" href="https://www.szlcsc.com/">立创商城_电子元器件采购网上商城_领先的现货元器件交易平台-嘉立创电子商城 (szlcsc.com)</a></p>
