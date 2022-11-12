@@ -4,6 +4,19 @@
   
   
   <entry>
+    <title>硬件通信协议综述</title>
+    <link href="/2022/11/13/%E7%A1%AC%E4%BB%B6%E9%80%9A%E4%BF%A1%E5%8D%8F%E8%AE%AE%E7%BB%BC%E8%BF%B0/"/>
+    <url>/2022/11/13/%E7%A1%AC%E4%BB%B6%E9%80%9A%E4%BF%A1%E5%8D%8F%E8%AE%AE%E7%BB%BC%E8%BF%B0/</url>
+    
+    <content type="html"><![CDATA[<p>Protocol，协议，简单点：规则。</p><p>家规，校规，国家法规，不同场景有不同规则，不同规则之间各有区别和联系，协议也是如此</p><p>粗暴点分成：<a href="https://blog.csdn.net/Roger_717/article/details/105781467">硬件层通信协议和软件层通信协议</a></p><blockquote><p>最好要了解TCP&#x2F;IP和OSI</p></blockquote><blockquote><p>网络通信可以理解成计算机系统之间的通信，是两个对等实体间的通信，比如两台计算机。这里的硬件通信协议一般是同一个计算机系统内部不同硬件组件之间的通信，通常都是不对等实体间的通信，比如CPU和外设芯片，按照OSI七层模型的话，硬件通信协议一般都是物理层和部分链路层的功能（差错控制什么的）。虽然都是通信协议，网络通信更强调适应不同硬件的计算机系统的适用性，硬件通信协议则根据不同的硬件芯片种类进行高度定制化。</p></blockquote><p>主要讲硬件层通信协议，大致介绍见如下教程：</p><ul><li><a href="https://zhuanlan.zhihu.com/p/47925844">常见硬件通信协议介绍 - 知乎</a></li></ul><p>这里我认为RS232、RS485、TTL与UART的关系需要重点注意</p><ul><li><a href="https://blog.csdn.net/weixin_42837669/article/details/117968045">串口通信简介——发展历史与基本概念</a></li><li><a href="https://blog.csdn.net/Roger_717/article/details/105775471">【理论】RS-232、RS-485、RS-422通信接口标准介绍_米杰的声音的博客-CSDN博客_422通信</a></li></ul><blockquote><p>需要说明一下，很多人经常把RS-232、RS-422、RS-485 误称为通讯协议，这是很不应该的，&#x3D;&#x3D;其实它们仅是关于UART通讯的一个机械和电气接口标准&#x3D;&#x3D;，顶多是网络协议中的物理层面。</p></blockquote><p>有几个概念要重点注意：</p><ol><li>接口</li><li>电气标准</li><li>协议</li></ol><p>只要电子设备使用多了就会注意一件事：”各种各样的插头&#x2F;接口”。说明见如下：<a href="https://zhuanlan.zhihu.com/p/115988697">为什么电子设备有这么多不同的接口？</a></p><p>这个视频教程讲的非常不错，这里再从板级PCB电路设计的角度上来说一下：主控芯片运行代码让电路进行电平变化，这里的<strong>电平变化</strong>，在<strong>电压的值</strong>上面就需要符合<strong>电气标准</strong>，而在<strong>变换的逻辑</strong>上面就需要符合<strong>硬件通信协议</strong>。之后，这个电平变化需要在不同的硬件介质(比如不同材质的电缆)中进行传输，根据不同场合下不同介质之间的连接，就需要不同的Interface，所以视频中说了Interface在<strong>形状，电路，拔插次数，应用场景</strong>等方面各有区别，这些在PCB设计的时候也都是<strong>需要考虑</strong>的。接口的形状和电路设计一定程度需要依据电气标准。然后有的芯片专门用于电气标准之间的转换，比如TTL和RS485之间进行转换。有的芯片还能将协议和电气标准一起转换，比如国产的USB转TTL芯片CH340</p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>conda入门配置GPU版本的pytorch</title>
     <link href="/2022/11/12/conda%E5%85%A5%E9%97%A8%E9%85%8D%E7%BD%AEGPU%E7%89%88%E6%9C%AC%E7%9A%84pytorch/"/>
     <url>/2022/11/12/conda%E5%85%A5%E9%97%A8%E9%85%8D%E7%BD%AEGPU%E7%89%88%E6%9C%AC%E7%9A%84pytorch/</url>
