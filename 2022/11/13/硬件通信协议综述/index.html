@@ -16,25 +16,25 @@
   <meta name="author" content="Aqstoner">
   <meta name="keywords" content="">
   
-    <meta name="description" content="介绍Anaconda可以便捷获取包且对包能够进行管理，其高性能使用Python、R语言。其包含的科学包包括：conda, numpy, scipy, ipython, notebook, TensorFlow等。它与conda(类似于pip的安装工具)、Anaconda导航器(用于GUI体验)和spyder(用于IDE)一起打包。 conda：conda是包及其依赖项和环境的管理工具。适用语言：P">
+    <meta name="description" content="Protocol，协议，简单点：规则。 家规，校规，国家法规，不同场景有不同规则，不同规则之间各有区别和联系，协议也是如此 粗暴点分成：硬件层通信协议和软件层通信协议  最好要了解TCP&#x2F;IP和OSI   网络通信可以理解成计算机系统之间的通信，是两个对等实体间的通信，比如两台计算机。这里的硬件通信协议一般是同一个计算机系统内部不同硬件组件之间的通信，通常都是不对等实体间的通信，比如CP">
 <meta property="og:type" content="article">
-<meta property="og:title" content="conda入门配置GPU版本的pytorch">
-<meta property="og:url" content="https://aqstoner.github.io/2022/11/12/conda%E5%85%A5%E9%97%A8%E9%85%8D%E7%BD%AEGPU%E7%89%88%E6%9C%AC%E7%9A%84pytorch/index.html">
+<meta property="og:title" content="硬件通信协议综述">
+<meta property="og:url" content="https://aqstoner.github.io/2022/11/13/%E7%A1%AC%E4%BB%B6%E9%80%9A%E4%BF%A1%E5%8D%8F%E8%AE%AE%E7%BB%BC%E8%BF%B0/index.html">
 <meta property="og:site_name" content="AqstonerBlog">
-<meta property="og:description" content="介绍Anaconda可以便捷获取包且对包能够进行管理，其高性能使用Python、R语言。其包含的科学包包括：conda, numpy, scipy, ipython, notebook, TensorFlow等。它与conda(类似于pip的安装工具)、Anaconda导航器(用于GUI体验)和spyder(用于IDE)一起打包。 conda：conda是包及其依赖项和环境的管理工具。适用语言：P">
+<meta property="og:description" content="Protocol，协议，简单点：规则。 家规，校规，国家法规，不同场景有不同规则，不同规则之间各有区别和联系，协议也是如此 粗暴点分成：硬件层通信协议和软件层通信协议  最好要了解TCP&#x2F;IP和OSI   网络通信可以理解成计算机系统之间的通信，是两个对等实体间的通信，比如两台计算机。这里的硬件通信协议一般是同一个计算机系统内部不同硬件组件之间的通信，通常都是不对等实体间的通信，比如CP">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://aqstoner.github.io/img/view/3.jpg">
-<meta property="article:published_time" content="2022-11-12T12:17:13.000Z">
-<meta property="article:modified_time" content="2022-11-12T12:21:36.702Z">
+<meta property="og:image" content="https://aqstoner.github.io/img/view/4.jpg">
+<meta property="article:published_time" content="2022-11-12T17:19:10.000Z">
+<meta property="article:modified_time" content="2022-11-12T17:24:25.846Z">
 <meta property="article:author" content="Aqstoner">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://aqstoner.github.io/img/view/3.jpg">
+<meta name="twitter:image" content="https://aqstoner.github.io/img/view/4.jpg">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>conda入门配置GPU版本的pytorch - AqstonerBlog</title>
+  <title>硬件通信协议综述 - AqstonerBlog</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -208,13 +208,13 @@
   
 
 <div id="banner" class="banner" parallax=true
-     style="background: url('/img/view/3.jpg') no-repeat center center; background-size: cover;">
+     style="background: url('/img/view/4.jpg') no-repeat center center; background-size: cover;">
   <div class="full-bg-img">
     <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle">conda入门配置GPU版本的pytorch</span>
+            <span id="subtitle">硬件通信协议综述</span>
           
         </div>
 
@@ -225,8 +225,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2022-11-12 20:17" pubdate>
-          2022年11月12日 晚上
+        <time datetime="2022-11-13 01:19" pubdate>
+          2022年11月13日 凌晨
         </time>
       </span>
     
@@ -237,7 +237,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          2.8k 字
+          915 字
         
       </span>
     
@@ -248,7 +248,7 @@
         
         
         
-          24 分钟
+          8 分钟
         
       </span>
     
@@ -294,12 +294,12 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">conda入门配置GPU版本的pytorch</h1>
+            <h1 style="display: none">硬件通信协议综述</h1>
             
               <p class="note note-info">
                 
                   
-                    本文最后更新于：5 小时前
+                    本文最后更新于：2 分钟前
                   
                 
               </p>
@@ -307,39 +307,35 @@
             
               <div class="markdown-body">
                 
-                <h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><p>Anaconda可以便捷获取包且对包能够进行管理，其高性能使用Python、R语言。其包含的科学包包括：conda, numpy, scipy, ipython, notebook, TensorFlow等。它与conda(类似于pip的安装工具)、Anaconda导航器(用于GUI体验)和spyder(用于IDE)一起打包。</p>
-<p>conda：conda是包及其依赖项和环境的管理工具。适用语言：Python, R, Ruby, Lua, Scala, Java, JavaScript, C&#x2F;C++, FORTRAN。用途：快速安装、运行和升级包及其依赖项。在计算机中便捷地创建、保存、加载和切换环境。  conda包和环境管理器包含于Anaconda的所有版本当中。</p>
-<p>pip是用于安装和管理软件包的包管理器。仅适用于Python。Python中默认安装的版本：Python 2.7.9及后续版本：默认安装，命令为pip，Python 3.4及后续版本：默认安装，命令为pip3。pip不一定会展示所需其他依赖包。安装包时或许会直接忽略依赖项而安装，仅在结果中提示错误。在系统自带Python中包的更新&#x2F;回退版本&#x2F;卸载将影响其他程序。</p>
-<p>conda列出所需其他依赖包。 安装包时自动安装其依赖项。可以便捷地在包的不同版本中自由切换。不会影响系统自带Python。conda结合了pip和virtualenv的功能。适用于Python, R, Ruby, Lua, Scala, Java, JavaScript, C&#x2F;C++, FORTRAN。</p>
-<h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><p>系统：window10</p>
+                <p>Protocol，协议，简单点：规则。</p>
+<p>家规，校规，国家法规，不同场景有不同规则，不同规则之间各有区别和联系，协议也是如此</p>
+<p>粗暴点分成：<a target="_blank" rel="noopener" href="https://blog.csdn.net/Roger_717/article/details/105781467">硬件层通信协议和软件层通信协议</a></p>
 <blockquote>
-<p>Linux的教程其实还是居多，算是一个劣势</p>
+<p>最好要了解TCP&#x2F;IP和OSI</p>
 </blockquote>
-<p>安装教程网上很多，不赘述，<strong>主要是在最后有个安装选项</strong>：是否将conda的python作为window的默认全局python，我没有勾选，个人不需要。</p>
-<p>安装完成之后在路径：<code>C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Anaconda3 (64-bit)</code>中，可以找到两个终端，其中一个是带powershell，<strong>我一般用的另一个不带的</strong>，不知道区别是什么，反正conda的指令操作全在这上面完成。</p>
-<p>基础配置：</p>
-<p>打开快捷方式<code>Anaconda Prompt (Miniconda3)</code>的属性把其中的Start in改成你想要的路径，以后打开cmd(后面直接用这个称呼，别和window自带的cmd搞混了)默认的路径就是你这里设置的。</p>
-<p>重点：<code>.condarc</code>文件，<a target="_blank" rel="noopener" href="https://blog.csdn.net/ljx0951/article/details/104121844">解决.condarc文件找不到的问题</a></p>
-<p>虚拟环境安装路径问题：<a target="_blank" rel="noopener" href="https://blog.csdn.net/m0_45176278/article/details/126670991">修改conda默认envs_dirs和pkgs_dirs</a>，这是默认的安装路径，当然可以在指令中加入后缀从而指定安装路径，但是比较麻烦。比如你使用<code>conda create -n a</code>，虚拟环境文件夹的名称为<code>a</code>，它就在<code>envs_dirs</code>中；</p>
-<p>而关于pkgs_dirs的解释可以看下面这个：<a target="_blank" rel="noopener" href="https://blog.csdn.net/nyist_yangguang/article/details/109848366">Anaconda中pkgs文件夹详解</a></p>
-<p><strong>如果需要换回conda的默认源</strong>：<code>text conda config --remove-key channels</code></p>
-<p>如果conda提示你版本需要更新了可以使用这个命令：<code>conda update -n base -c defaults conda</code></p>
-<p><strong>第一个难题：</strong></p>
-<p>源。很多教程都说了，为了加快下载用清华源，但是我一般都是科学上网，所以反倒不想换到清华源，但是科学上网无法使用conda，<a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_44994302/article/details/127716897">【Windows】conda下载慢问题，下载源，代理设置</a>解决了我的问题。</p>
 <blockquote>
-<p>这里给一个Liunx版本的<a target="_blank" rel="noopener" href="https://segmentfault.com/q/1010000008668178?sort=newest&u_atoken">教程</a></p>
+<p>网络通信可以理解成计算机系统之间的通信，是两个对等实体间的通信，比如两台计算机。这里的硬件通信协议一般是同一个计算机系统内部不同硬件组件之间的通信，通常都是不对等实体间的通信，比如CPU和外设芯片，按照OSI七层模型的话，硬件通信协议一般都是物理层和部分链路层的功能（差错控制什么的）。虽然都是通信协议，网络通信更强调适应不同硬件的计算机系统的适用性，硬件通信协议则根据不同的硬件芯片种类进行高度定制化。</p>
 </blockquote>
-<p>我直接贴一下我的.condarc文件配置：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-attr">show_channel_urls</span>: <span class="hljs-literal">true</span><br><span class="hljs-attr">envs_dirs</span>:<br>  - <span class="hljs-attr">D</span>:\<span class="hljs-title class_">CodeField</span>\<span class="hljs-title class_">Python</span>\<span class="hljs-title class_">Conda</span>_dirs\envs_dirs<br><span class="hljs-attr">pkgs_dirs</span>:<br>  - <span class="hljs-attr">D</span>:\<span class="hljs-title class_">CodeField</span>\<span class="hljs-title class_">Python</span>\<span class="hljs-title class_">Conda</span>_dirs\pkgs_dirs<br><span class="hljs-attr">channels</span>:<br>  - defaults<br><span class="hljs-attr">default_channels</span>:<br>  - <span class="hljs-attr">https</span>:<span class="hljs-comment">//mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/</span><br>  - <span class="hljs-attr">https</span>:<span class="hljs-comment">//mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/r/</span><br>  - <span class="hljs-attr">https</span>:<span class="hljs-comment">//mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/msys2/</span><br>  - <span class="hljs-attr">https</span>:<span class="hljs-comment">//mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/</span><br>  - <span class="hljs-attr">https</span>:<span class="hljs-comment">//mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/pytorch/</span><br><span class="hljs-attr">custom_channels</span>:<br>  conda-<span class="hljs-attr">forge</span>: <span class="hljs-attr">https</span>:<span class="hljs-comment">//mirrors.tuna.tsinghua.edu.cn/anaconda/cloud</span><br>  <span class="hljs-attr">msys2</span>: <span class="hljs-attr">https</span>:<span class="hljs-comment">//mirrors.tuna.tsinghua.edu.cn/anaconda/cloud</span><br>  <span class="hljs-attr">bioconda</span>: <span class="hljs-attr">https</span>:<span class="hljs-comment">//mirrors.tuna.tsinghua.edu.cn/anaconda/cloud</span><br>  <span class="hljs-attr">menpo</span>: <span class="hljs-attr">https</span>:<span class="hljs-comment">//mirrors.tuna.tsinghua.edu.cn/anaconda/cloud</span><br>  <span class="hljs-attr">pytorch</span>: <span class="hljs-attr">https</span>:<span class="hljs-comment">//mirrors.tuna.tsinghua.edu.cn/anaconda/cloud</span><br>  pytorch-<span class="hljs-attr">lts</span>: <span class="hljs-attr">https</span>:<span class="hljs-comment">//mirrors.tuna.tsinghua.edu.cn/anaconda/cloud</span><br>  <span class="hljs-attr">simpleitk</span>: <span class="hljs-attr">https</span>:<span class="hljs-comment">//mirrors.tuna.tsinghua.edu.cn/anaconda/cloud</span><br><span class="hljs-attr">ssl_verify</span>: <span class="hljs-literal">false</span><br><span class="hljs-attr">proxy_servers</span>:<br>  <span class="hljs-attr">http</span>: <span class="hljs-attr">http</span>:<span class="hljs-comment">//127.0.0.1:33333</span><br>  <span class="hljs-attr">https</span>: <span class="hljs-attr">http</span>:<span class="hljs-comment">//127.0.0.1:33333</span><br></code></pre></td></tr></table></figure>
-
-<p>安装路径的配置前面我说过了。主要是这个proxy_servers，是根据我自己的代理配置的，后面确实可以用。剩下其实还有两个疑问：<code>ssl_verify</code>与<code>custom_channels</code></p>
-<p><strong>第二个难题：</strong></p>
-<p>这个问题真的是非常狗，再配合上第一个难题，总结下来就是：我TM代理下不成功，逼我用清华源，最后清华源又TM给我安个CPU版本，有想过离线安装，但是配置步骤繁琐，更容易出错，还是使用指令比较好。</p>
+<p>主要讲硬件层通信协议，大致介绍见如下教程：</p>
 <ul>
-<li>(推荐)<a target="_blank" rel="noopener" href="https://blog.csdn.net/HuangJM3/article/details/123685177">安装GPU版本的pytorch（解决pytorch安装时默认安装CPU版本的问题）</a></li>
-<li>(推荐)<a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_43868021/article/details/122083729">清华源conda 安装gpu版本的pytorch总是推送cpu版本解决办法</a></li>
-<li><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_31239371/article/details/120973871">安装Pytorch后torch.cuda.is_available()返回False问题解决</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/47925844">常见硬件通信协议介绍 - 知乎</a></li>
 </ul>
+<p>这里我认为RS232、RS485、TTL与UART的关系需要重点注意</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_42837669/article/details/117968045">串口通信简介——发展历史与基本概念</a></li>
+<li><a target="_blank" rel="noopener" href="https://blog.csdn.net/Roger_717/article/details/105775471">【理论】RS-232、RS-485、RS-422通信接口标准介绍</a></li>
+</ul>
+<blockquote>
+<p>需要说明一下，很多人经常把RS-232、RS-422、RS-485 误称为通讯协议，这是很不应该的，其实它们仅是关于UART通讯的一个<strong>机械和电气接口标准</strong>，顶多是网络协议中的物理层面。</p>
+</blockquote>
+<p>有几个概念要重点注意：</p>
+<ol>
+<li>接口</li>
+<li>电气标准</li>
+<li>协议</li>
+</ol>
+<p>只要电子设备使用多了就会注意一件事：”各种各样的插头&#x2F;接口”。说明见如下：<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/115988697">为什么电子设备有这么多不同的接口？</a></p>
+<p>这个视频教程讲的非常不错，这里再从板级PCB电路设计的角度上来说一下：主控芯片运行代码让电路进行电平变化，这里的<strong>电平变化</strong>，在<strong>电压的值</strong>上面就需要符合<strong>电气标准</strong>，而在<strong>变换的逻辑</strong>上面就需要符合<strong>硬件通信协议</strong>。之后，这个电平变化需要在不同的硬件介质(比如不同材质的电缆)中进行传输，根据不同场合下不同介质之间的连接，就需要不同的Interface，所以视频中说了Interface在<strong>形状，电路，拔插次数，应用场景</strong>等方面各有区别，这些在PCB设计的时候也都是<strong>需要考虑</strong>的。接口的形状和电路设计一定程度需要依据电气标准。然后有的芯片专门用于电气标准之间的转换，比如TTL和RS485之间进行转换。有的芯片还能将协议和电气标准一起转换，比如国产的USB转TTL芯片CH340</p>
 
                 
               </div>
@@ -357,8 +353,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>conda入门配置GPU版本的pytorch</div>
-      <div>https://aqstoner.github.io/2022/11/12/conda入门配置GPU版本的pytorch/</div>
+      <div>硬件通信协议综述</div>
+      <div>https://aqstoner.github.io/2022/11/13/硬件通信协议综述/</div>
     </div>
     <div class="license-meta">
       
@@ -370,7 +366,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2022年11月12日</div>
+          <div>2022年11月13日</div>
         </div>
       
       
@@ -400,18 +396,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2022/11/13/%E7%A1%AC%E4%BB%B6%E9%80%9A%E4%BF%A1%E5%8D%8F%E8%AE%AE%E7%BB%BC%E8%BF%B0/" title="硬件通信协议综述">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">硬件通信协议综述</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2022/10/14/DC-DC%E5%BC%80%E5%85%B3%E7%94%B5%E6%BA%90/" title="DC-DC开关电源">
-                        <span class="hidden-mobile">DC-DC开关电源</span>
+                      <a href="/2022/11/12/conda%E5%85%A5%E9%97%A8%E9%85%8D%E7%BD%AEGPU%E7%89%88%E6%9C%AC%E7%9A%84pytorch/" title="conda入门配置GPU版本的pytorch">
+                        <span class="hidden-mobile">conda入门配置GPU版本的pytorch</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
