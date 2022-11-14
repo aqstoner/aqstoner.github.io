@@ -4,6 +4,19 @@
   
   
   <entry>
+    <title>STM32入门介绍</title>
+    <link href="/2022/11/14/STM32%E5%85%A5%E9%97%A8%E4%BB%8B%E7%BB%8D/"/>
+    <url>/2022/11/14/STM32%E5%85%A5%E9%97%A8%E4%BB%8B%E7%BB%8D/</url>
+    
+    <content type="html"><![CDATA[<h3 id="基本介绍"><a href="#基本介绍" class="headerlink" title="基本介绍"></a>基本介绍</h3><p>STM32是<strong>意法半导体公司</strong>推出的基于<strong>ARM Cortex-M内核</strong>的<strong>通用型单片机</strong>。</p><blockquote><p>需要了解MCU和CPU之间的不同</p></blockquote><p>官网：<a href="https://www.stmcu.com.cn/product">产品 | STM32&#x2F;STM8 | MCU单片机 | 意法半导体STM | 意法半导体STM | STM32&#x2F;STM8微控制器 | MCU单片机</a></p><h3 id="产品"><a href="#产品" class="headerlink" title="产品"></a>产品</h3><p><img src="https://cdn.jsdelivr.net/gh/aqstoner/AqstonerBookAssets@latest/img/202207301912862.png" alt="|500"></p><p>如上为官网的产品介绍图，由于RoboMaster机甲大师赛还有蓝桥杯嵌入式等比赛，使用的都是STM32，没有用到过STM8，所以只介绍STM32。</p><p>ST公司在近年主要拓展MPU、无线系列、高性能的H系列以及新主流G系列。过往的主流，也是国内资料较多的是F系列。</p><p>然后，由于国际情况和产能原因，最近芯片价格大幅度提高，而且波动较大，芯片难买且贵的现象持续了有一段时间。</p><h3 id="开发库"><a href="#开发库" class="headerlink" title="开发库"></a>开发库</h3><p><img src="https://cdn.jsdelivr.net/gh/aqstoner/AqstonerBookAssets@latest/img/202207301952990.png"></p><p>由于标准库不再更新，而且不适配CubeMX，<strong>可以视作被淘汰</strong>。<br>另一方面寄存器的使用则是最为复杂，而且移植性最低，可以类比汇编语言的地位。</p><p>所以主流中以HAL库和LL库为主，另一方面，与HAL库相同，LL库同样支持CUBEMX生成代码，非常方便。并且，在cubemx工程中，不同外设是可以混合使用HAL和LL库的，两者完全兼容，所以适配上是不存在问题的。所以STM32的学习以外设功能分类，兼具HAL库和LL库的配置。</p><h3 id="STM32官网"><a href="#STM32官网" class="headerlink" title="STM32官网"></a>STM32官网</h3><p>STM32官网绝对是一个宝藏，STM32之所以在国内市场上有如此的普及度，离不开其对于丰富的产品资料及其中文本土化——即其产品的使用对国内的用户非常的友好，而且生态也非常完善。这也是为什么即便其芯片价格大幅度增长，也很难脱离其产品的原因</p><p>官方链接见笔记开头</p><ul><li><p>全部产品的介绍</p></li><li><p>各个垂直应用的入门渠道</p><ul><li><img src="https://cdn.jsdelivr.net/gh/aqstoner/AqstonerBookAssets@latest/img/202208031850480.png"></li></ul></li><li><p>丰富的设计资源</p><ul><li><img src="https://cdn.jsdelivr.net/gh/aqstoner/AqstonerBookAssets@latest/img/202208031851320.png"><br>  这里重点讲一下芯片文档，后面学习全是以官方的芯片文档作为基础，其它网上教程、资料只是作为辅助。</li></ul></li><li><p>参考手册：一般面向应用程序开发人员，为用户使用单片机(芯片)提供了完整的存储器和外设信息，一般会具体到支持的芯片系列</p></li><li><p>(芯片)数据手册：介绍了芯片的主要外设资源和电特性参数及其具备的外设资源</p></li><li><p>数据勘误手册：勘误</p></li><li><p>编程手册：为单片机用户提供完整的编程指南，其包含<strong>cortex内核得汇编指令及其使用</strong>，以及内核相关寄存器，一般为汇编语言。</p></li><li><p>应用笔记：一些具体问题的解决方案，例如</p><ul><li>“提高微控制器EMC性能的软件技术”</li><li>“如何将PDM数字麦克风连接到STM32单片机”</li></ul></li><li><p>用户手册：各种软件硬件的操作方法？例如</p><ul><li>“如何使用STM32Cube中的实时操作系统”</li><li>“STM32CubeMX的配置和C代码的生成”</li><li>“STM32马达控制软件工具SDK_V5.0入门”</li></ul></li><li><p>其它</p></li></ul><p>区分点：</p><ol><li>数据手册是从芯片本身的<strong>电气参数</strong>来讲解，主要是硬件设计</li><li>参考手册是从这个芯片的外设应用来讲解，主要是软件开发</li><li>编程手册虽然也是软件，但是讲的是内核架构，汇编底层这方面的，一般直接用于上层开发</li><li>应用笔记关注于非常具体的问题的解决方案，相比之下，用户手册则是介绍更为广泛的<strong>一类技术手段</strong>。</li></ol><blockquote><p>一般设计主控板的时候我才会去看芯片的数据手册，选型的话直接去看选型手册了，不看数据手册。编程手册则是门槛太高，了解下就行。如果要提升开发的能力，则是看参考手册和用户手册，而具体到了某个问题就去查阅应用笔记。</p></blockquote><h3 id="学习"><a href="#学习" class="headerlink" title="学习"></a>学习</h3><p>资料：</p><ol><li>最权威且全面的就是官网上面的各种手册</li><li>国内的正点原子和野火的入门教程资料</li><li>各种他人的学习笔记和教程</li><li>B站的教程视频</li></ol><p><strong>STM32的开发涵盖这些领域</strong></p><ul><li>底层的[[ARM架构]]及其指令集</li><li>底层芯片的驱动文件</li><li>寄存器、HAL库、LL库开发(SDK)</li><li>集成环境IDE(Clion、MDK、IAR等)</li><li>C语言编程</li><li>实时操作系统（Real-time operating system, <strong>RTOS</strong>）</li></ul><p>STM32还可以应用于物联网(The Internet of Things，简称IOT)领域，在这方面还需要学习各种<strong>软件通信协议</strong>和<strong>无线通信方式</strong>。</p><p>STM32作为一个芯片还需要各种外围电路便于控制，所以也与板级PCB电路设计相联系。</p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>硬件通信协议综述</title>
     <link href="/2022/11/13/%E7%A1%AC%E4%BB%B6%E9%80%9A%E4%BF%A1%E5%8D%8F%E8%AE%AE%E7%BB%BC%E8%BF%B0/"/>
     <url>/2022/11/13/%E7%A1%AC%E4%BB%B6%E9%80%9A%E4%BF%A1%E5%8D%8F%E8%AE%AE%E7%BB%BC%E8%BF%B0/</url>

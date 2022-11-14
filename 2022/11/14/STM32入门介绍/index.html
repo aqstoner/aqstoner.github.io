@@ -16,25 +16,25 @@
   <meta name="author" content="Aqstoner">
   <meta name="keywords" content="">
   
-    <meta name="description" content="Protocol，协议，简单点：规则。 家规，校规，国家法规，不同场景有不同规则，不同规则之间各有区别和联系，协议也是如此 粗暴点分成：硬件层通信协议和软件层通信协议  最好要了解TCP&#x2F;IP和OSI   网络通信可以理解成计算机系统之间的通信，是两个对等实体间的通信，比如两台计算机。这里的硬件通信协议一般是同一个计算机系统内部不同硬件组件之间的通信，通常都是不对等实体间的通信，比如CP">
+    <meta name="description" content="基本介绍STM32是意法半导体公司推出的基于ARM Cortex-M内核的通用型单片机。  需要了解MCU和CPU之间的不同  官网：产品 | STM32&#x2F;STM8 | MCU单片机 | 意法半导体STM | 意法半导体STM | STM32&#x2F;STM8微控制器 | MCU单片机 产品 如上为官网的产品介绍图，由于RoboMaster机甲大师赛还有蓝桥杯嵌入式等比赛，使用的都是S">
 <meta property="og:type" content="article">
-<meta property="og:title" content="硬件通信协议综述">
-<meta property="og:url" content="https://aqstoner.github.io/2022/11/13/%E7%A1%AC%E4%BB%B6%E9%80%9A%E4%BF%A1%E5%8D%8F%E8%AE%AE%E7%BB%BC%E8%BF%B0/index.html">
+<meta property="og:title" content="STM32入门介绍">
+<meta property="og:url" content="https://aqstoner.github.io/2022/11/14/STM32%E5%85%A5%E9%97%A8%E4%BB%8B%E7%BB%8D/index.html">
 <meta property="og:site_name" content="AqstonerBlog">
-<meta property="og:description" content="Protocol，协议，简单点：规则。 家规，校规，国家法规，不同场景有不同规则，不同规则之间各有区别和联系，协议也是如此 粗暴点分成：硬件层通信协议和软件层通信协议  最好要了解TCP&#x2F;IP和OSI   网络通信可以理解成计算机系统之间的通信，是两个对等实体间的通信，比如两台计算机。这里的硬件通信协议一般是同一个计算机系统内部不同硬件组件之间的通信，通常都是不对等实体间的通信，比如CP">
+<meta property="og:description" content="基本介绍STM32是意法半导体公司推出的基于ARM Cortex-M内核的通用型单片机。  需要了解MCU和CPU之间的不同  官网：产品 | STM32&#x2F;STM8 | MCU单片机 | 意法半导体STM | 意法半导体STM | STM32&#x2F;STM8微控制器 | MCU单片机 产品 如上为官网的产品介绍图，由于RoboMaster机甲大师赛还有蓝桥杯嵌入式等比赛，使用的都是S">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://aqstoner.github.io/img/view/4.jpg">
-<meta property="article:published_time" content="2022-11-12T17:19:10.000Z">
-<meta property="article:modified_time" content="2022-11-12T17:24:25.846Z">
+<meta property="og:image" content="https://aqstoner.github.io/img/view/5.jpg">
+<meta property="article:published_time" content="2022-11-14T07:10:32.000Z">
+<meta property="article:modified_time" content="2022-11-14T07:10:50.235Z">
 <meta property="article:author" content="Aqstoner">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://aqstoner.github.io/img/view/4.jpg">
+<meta name="twitter:image" content="https://aqstoner.github.io/img/view/5.jpg">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>硬件通信协议综述 - AqstonerBlog</title>
+  <title>STM32入门介绍 - AqstonerBlog</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -208,13 +208,13 @@
   
 
 <div id="banner" class="banner" parallax=true
-     style="background: url('/img/view/4.jpg') no-repeat center center; background-size: cover;">
+     style="background: url('/img/view/5.jpg') no-repeat center center; background-size: cover;">
   <div class="full-bg-img">
     <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle">硬件通信协议综述</span>
+            <span id="subtitle">STM32入门介绍</span>
           
         </div>
 
@@ -225,8 +225,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2022-11-13 01:19" pubdate>
-          2022年11月13日 凌晨
+        <time datetime="2022-11-14 15:10" pubdate>
+          2022年11月14日 下午
         </time>
       </span>
     
@@ -237,7 +237,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          915 字
+          1.6k 字
         
       </span>
     
@@ -248,7 +248,7 @@
         
         
         
-          8 分钟
+          14 分钟
         
       </span>
     
@@ -294,12 +294,12 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">硬件通信协议综述</h1>
+            <h1 style="display: none">STM32入门介绍</h1>
             
               <p class="note note-info">
                 
                   
-                    本文最后更新于：2 天前
+                    本文最后更新于：几秒前
                   
                 
               </p>
@@ -307,35 +307,85 @@
             
               <div class="markdown-body">
                 
-                <p>Protocol，协议，简单点：规则。</p>
-<p>家规，校规，国家法规，不同场景有不同规则，不同规则之间各有区别和联系，协议也是如此</p>
-<p>粗暴点分成：<a target="_blank" rel="noopener" href="https://blog.csdn.net/Roger_717/article/details/105781467">硬件层通信协议和软件层通信协议</a></p>
+                <h3 id="基本介绍"><a href="#基本介绍" class="headerlink" title="基本介绍"></a>基本介绍</h3><p>STM32是<strong>意法半导体公司</strong>推出的基于<strong>ARM Cortex-M内核</strong>的<strong>通用型单片机</strong>。</p>
 <blockquote>
-<p>最好要了解TCP&#x2F;IP和OSI</p>
+<p>需要了解MCU和CPU之间的不同</p>
 </blockquote>
-<blockquote>
-<p>网络通信可以理解成计算机系统之间的通信，是两个对等实体间的通信，比如两台计算机。这里的硬件通信协议一般是同一个计算机系统内部不同硬件组件之间的通信，通常都是不对等实体间的通信，比如CPU和外设芯片，按照OSI七层模型的话，硬件通信协议一般都是物理层和部分链路层的功能（差错控制什么的）。虽然都是通信协议，网络通信更强调适应不同硬件的计算机系统的适用性，硬件通信协议则根据不同的硬件芯片种类进行高度定制化。</p>
-</blockquote>
-<p>主要讲硬件层通信协议，大致介绍见如下教程：</p>
+<p>官网：<a target="_blank" rel="noopener" href="https://www.stmcu.com.cn/product">产品 | STM32&#x2F;STM8 | MCU单片机 | 意法半导体STM | 意法半导体STM | STM32&#x2F;STM8微控制器 | MCU单片机</a></p>
+<h3 id="产品"><a href="#产品" class="headerlink" title="产品"></a>产品</h3><p><img src="https://cdn.jsdelivr.net/gh/aqstoner/AqstonerBookAssets@latest/img/202207301912862.png" srcset="/img/loading.gif" lazyload alt="|500"></p>
+<p>如上为官网的产品介绍图，由于RoboMaster机甲大师赛还有蓝桥杯嵌入式等比赛，使用的都是STM32，没有用到过STM8，所以只介绍STM32。</p>
+<p>ST公司在近年主要拓展MPU、无线系列、高性能的H系列以及新主流G系列。过往的主流，也是国内资料较多的是F系列。</p>
+<p>然后，由于国际情况和产能原因，最近芯片价格大幅度提高，而且波动较大，芯片难买且贵的现象持续了有一段时间。</p>
+<h3 id="开发库"><a href="#开发库" class="headerlink" title="开发库"></a>开发库</h3><p><img src="https://cdn.jsdelivr.net/gh/aqstoner/AqstonerBookAssets@latest/img/202207301952990.png" srcset="/img/loading.gif" lazyload></p>
+<p>由于标准库不再更新，而且不适配CubeMX，<strong>可以视作被淘汰</strong>。<br>另一方面寄存器的使用则是最为复杂，而且移植性最低，可以类比汇编语言的地位。</p>
+<p>所以主流中以HAL库和LL库为主，另一方面，与HAL库相同，LL库同样支持CUBEMX生成代码，非常方便。并且，在cubemx工程中，不同外设是可以混合使用HAL和LL库的，两者完全兼容，所以适配上是不存在问题的。所以STM32的学习以外设功能分类，兼具HAL库和LL库的配置。</p>
+<h3 id="STM32官网"><a href="#STM32官网" class="headerlink" title="STM32官网"></a>STM32官网</h3><p>STM32官网绝对是一个宝藏，STM32之所以在国内市场上有如此的普及度，离不开其对于丰富的产品资料及其中文本土化——即其产品的使用对国内的用户非常的友好，而且生态也非常完善。这也是为什么即便其芯片价格大幅度增长，也很难脱离其产品的原因</p>
+<p>官方链接见笔记开头</p>
 <ul>
-<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/47925844">常见硬件通信协议介绍 - 知乎</a></li>
-</ul>
-<p>这里我认为RS232、RS485、TTL与UART的关系需要重点注意</p>
+<li><p>全部产品的介绍</p>
+</li>
+<li><p>各个垂直应用的入门渠道</p>
 <ul>
-<li><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_42837669/article/details/117968045">串口通信简介——发展历史与基本概念</a></li>
-<li><a target="_blank" rel="noopener" href="https://blog.csdn.net/Roger_717/article/details/105775471">【理论】RS-232、RS-485、RS-422通信接口标准介绍</a></li>
+<li><img src="https://cdn.jsdelivr.net/gh/aqstoner/AqstonerBookAssets@latest/img/202208031850480.png" srcset="/img/loading.gif" lazyload></li>
 </ul>
-<blockquote>
-<p>需要说明一下，很多人经常把RS-232、RS-422、RS-485 误称为通讯协议，这是很不应该的，其实它们仅是关于UART通讯的一个<strong>机械和电气接口标准</strong>，顶多是网络协议中的物理层面。</p>
-</blockquote>
-<p>有几个概念要重点注意：</p>
+</li>
+<li><p>丰富的设计资源</p>
+<ul>
+<li><img src="https://cdn.jsdelivr.net/gh/aqstoner/AqstonerBookAssets@latest/img/202208031851320.png" srcset="/img/loading.gif" lazyload><br>  这里重点讲一下芯片文档，后面学习全是以官方的芯片文档作为基础，其它网上教程、资料只是作为辅助。</li>
+</ul>
+</li>
+<li><p>参考手册：一般面向应用程序开发人员，为用户使用单片机(芯片)提供了完整的存储器和外设信息，一般会具体到支持的芯片系列</p>
+</li>
+<li><p>(芯片)数据手册：介绍了芯片的主要外设资源和电特性参数及其具备的外设资源</p>
+</li>
+<li><p>数据勘误手册：勘误</p>
+</li>
+<li><p>编程手册：为单片机用户提供完整的编程指南，其包含<strong>cortex内核得汇编指令及其使用</strong>，以及内核相关寄存器，一般为汇编语言。</p>
+</li>
+<li><p>应用笔记：一些具体问题的解决方案，例如</p>
+<ul>
+<li>“提高微控制器EMC性能的软件技术”</li>
+<li>“如何将PDM数字麦克风连接到STM32单片机”</li>
+</ul>
+</li>
+<li><p>用户手册：各种软件硬件的操作方法？例如</p>
+<ul>
+<li>“如何使用STM32Cube中的实时操作系统”</li>
+<li>“STM32CubeMX的配置和C代码的生成”</li>
+<li>“STM32马达控制软件工具SDK_V5.0入门”</li>
+</ul>
+</li>
+<li><p>其它</p>
+</li>
+</ul>
+<p>区分点：</p>
 <ol>
-<li>接口</li>
-<li>电气标准</li>
-<li>协议</li>
+<li>数据手册是从芯片本身的<strong>电气参数</strong>来讲解，主要是硬件设计</li>
+<li>参考手册是从这个芯片的外设应用来讲解，主要是软件开发</li>
+<li>编程手册虽然也是软件，但是讲的是内核架构，汇编底层这方面的，一般直接用于上层开发</li>
+<li>应用笔记关注于非常具体的问题的解决方案，相比之下，用户手册则是介绍更为广泛的<strong>一类技术手段</strong>。</li>
 </ol>
-<p>只要电子设备使用多了就会注意一件事：”各种各样的插头&#x2F;接口”。说明见如下：<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/115988697">为什么电子设备有这么多不同的接口？</a></p>
-<p>这个视频教程讲的非常不错，这里再从板级PCB电路设计的角度上来说一下：主控芯片运行代码让电路进行电平变化，这里的<strong>电平变化</strong>，在<strong>电压的值</strong>上面就需要符合<strong>电气标准</strong>，而在<strong>变换的逻辑</strong>上面就需要符合<strong>硬件通信协议</strong>。之后，这个电平变化需要在不同的硬件介质(比如不同材质的电缆)中进行传输，根据不同场合下不同介质之间的连接，就需要不同的Interface，所以视频中说了Interface在<strong>形状，电路，拔插次数，应用场景</strong>等方面各有区别，这些在PCB设计的时候也都是<strong>需要考虑</strong>的。接口的形状和电路设计一定程度需要依据电气标准。然后有的芯片专门用于电气标准之间的转换，比如TTL和RS485之间进行转换。有的芯片还能将协议和电气标准一起转换，比如国产的USB转TTL芯片CH340</p>
+<blockquote>
+<p>一般设计主控板的时候我才会去看芯片的数据手册，选型的话直接去看选型手册了，不看数据手册。编程手册则是门槛太高，了解下就行。如果要提升开发的能力，则是看参考手册和用户手册，而具体到了某个问题就去查阅应用笔记。</p>
+</blockquote>
+<h3 id="学习"><a href="#学习" class="headerlink" title="学习"></a>学习</h3><p>资料：</p>
+<ol>
+<li>最权威且全面的就是官网上面的各种手册</li>
+<li>国内的正点原子和野火的入门教程资料</li>
+<li>各种他人的学习笔记和教程</li>
+<li>B站的教程视频</li>
+</ol>
+<p><strong>STM32的开发涵盖这些领域</strong></p>
+<ul>
+<li>底层的[[ARM架构]]及其指令集</li>
+<li>底层芯片的驱动文件</li>
+<li>寄存器、HAL库、LL库开发(SDK)</li>
+<li>集成环境IDE(Clion、MDK、IAR等)</li>
+<li>C语言编程</li>
+<li>实时操作系统（Real-time operating system, <strong>RTOS</strong>）</li>
+</ul>
+<p>STM32还可以应用于物联网(The Internet of Things，简称IOT)领域，在这方面还需要学习各种<strong>软件通信协议</strong>和<strong>无线通信方式</strong>。</p>
+<p>STM32作为一个芯片还需要各种外围电路便于控制，所以也与板级PCB电路设计相联系。</p>
 
                 
               </div>
@@ -353,8 +403,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>硬件通信协议综述</div>
-      <div>https://aqstoner.github.io/2022/11/13/硬件通信协议综述/</div>
+      <div>STM32入门介绍</div>
+      <div>https://aqstoner.github.io/2022/11/14/STM32入门介绍/</div>
     </div>
     <div class="license-meta">
       
@@ -366,7 +416,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2022年11月13日</div>
+          <div>2022年11月14日</div>
         </div>
       
       
@@ -396,18 +446,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2022/11/14/STM32%E5%85%A5%E9%97%A8%E4%BB%8B%E7%BB%8D/" title="STM32入门介绍">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">STM32入门介绍</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2022/11/12/conda%E5%85%A5%E9%97%A8%E9%85%8D%E7%BD%AEGPU%E7%89%88%E6%9C%AC%E7%9A%84pytorch/" title="conda入门配置GPU版本的pytorch">
-                        <span class="hidden-mobile">conda入门配置GPU版本的pytorch</span>
+                      <a href="/2022/11/13/%E7%A1%AC%E4%BB%B6%E9%80%9A%E4%BF%A1%E5%8D%8F%E8%AE%AE%E7%BB%BC%E8%BF%B0/" title="硬件通信协议综述">
+                        <span class="hidden-mobile">硬件通信协议综述</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
