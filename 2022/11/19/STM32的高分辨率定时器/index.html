@@ -16,25 +16,25 @@
   <meta name="author" content="Aqstoner">
   <meta name="keywords" content="">
   
-    <meta name="description" content="介绍Anaconda可以便捷获取包且对包能够进行管理，其高性能使用Python、R语言。其包含的科学包包括：conda, numpy, scipy, ipython, notebook, TensorFlow等。它与conda(类似于pip的安装工具)、Anaconda导航器(用于GUI体验)和spyder(用于IDE)一起打包。 conda：conda是包及其依赖项和环境的管理工具。适用语言：P">
+    <meta name="description" content="针对于主控型号：STM32F334R8T6 参考手册：HRTIM使用指南中文参考手册(就是边看这个手册边做的记录) 学习链接： STM32G4+HAL快速入门（3）：HRTIM基础 HAL库的HRTIM源文件stm32h7xx_hal_hrtim.c学习笔记 stm32f334 CubeMx配置高分辨率定时器HRTIM - 知乎 STM32H7的高分辨率定时器HRTIM应用之PWM实现">
 <meta property="og:type" content="article">
-<meta property="og:title" content="conda入门配置GPU版本的pytorch">
-<meta property="og:url" content="https://aqstoner.github.io/2022/11/12/conda%E5%85%A5%E9%97%A8%E9%85%8D%E7%BD%AEGPU%E7%89%88%E6%9C%AC%E7%9A%84pytorch/index.html">
+<meta property="og:title" content="STM32的高分辨率定时器">
+<meta property="og:url" content="https://aqstoner.github.io/2022/11/19/STM32%E7%9A%84%E9%AB%98%E5%88%86%E8%BE%A8%E7%8E%87%E5%AE%9A%E6%97%B6%E5%99%A8/index.html">
 <meta property="og:site_name" content="AqstonerBlog">
-<meta property="og:description" content="介绍Anaconda可以便捷获取包且对包能够进行管理，其高性能使用Python、R语言。其包含的科学包包括：conda, numpy, scipy, ipython, notebook, TensorFlow等。它与conda(类似于pip的安装工具)、Anaconda导航器(用于GUI体验)和spyder(用于IDE)一起打包。 conda：conda是包及其依赖项和环境的管理工具。适用语言：P">
+<meta property="og:description" content="针对于主控型号：STM32F334R8T6 参考手册：HRTIM使用指南中文参考手册(就是边看这个手册边做的记录) 学习链接： STM32G4+HAL快速入门（3）：HRTIM基础 HAL库的HRTIM源文件stm32h7xx_hal_hrtim.c学习笔记 stm32f334 CubeMx配置高分辨率定时器HRTIM - 知乎 STM32H7的高分辨率定时器HRTIM应用之PWM实现">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://aqstoner.github.io/img/view/3.jpg">
-<meta property="article:published_time" content="2022-11-12T12:17:13.000Z">
-<meta property="article:modified_time" content="2022-11-12T17:34:48.609Z">
+<meta property="og:image" content="https://aqstoner.github.io/img/view/6.jpg">
+<meta property="article:published_time" content="2022-11-19T05:40:31.000Z">
+<meta property="article:modified_time" content="2022-11-19T05:41:11.569Z">
 <meta property="article:author" content="Aqstoner">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://aqstoner.github.io/img/view/3.jpg">
+<meta name="twitter:image" content="https://aqstoner.github.io/img/view/6.jpg">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>conda入门配置GPU版本的pytorch - AqstonerBlog</title>
+  <title>STM32的高分辨率定时器 - AqstonerBlog</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -208,13 +208,13 @@
   
 
 <div id="banner" class="banner" parallax=true
-     style="background: url('/img/view/3.jpg') no-repeat center center; background-size: cover;">
+     style="background: url('/img/view/6.jpg') no-repeat center center; background-size: cover;">
   <div class="full-bg-img">
     <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle">conda入门配置GPU版本的pytorch</span>
+            <span id="subtitle">STM32的高分辨率定时器</span>
           
         </div>
 
@@ -225,8 +225,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2022-11-12 20:17" pubdate>
-          2022年11月12日 晚上
+        <time datetime="2022-11-19 13:40" pubdate>
+          2022年11月19日 下午
         </time>
       </span>
     
@@ -237,7 +237,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          2.8k 字
+          2.2k 字
         
       </span>
     
@@ -248,7 +248,7 @@
         
         
         
-          24 分钟
+          19 分钟
         
       </span>
     
@@ -294,12 +294,12 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">conda入门配置GPU版本的pytorch</h1>
+            <h1 style="display: none">STM32的高分辨率定时器</h1>
             
               <p class="note note-info">
                 
                   
-                    本文最后更新于：7 天前
+                    本文最后更新于：几秒前
                   
                 
               </p>
@@ -307,39 +307,121 @@
             
               <div class="markdown-body">
                 
-                <h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><p>Anaconda可以便捷获取包且对包能够进行管理，其高性能使用Python、R语言。其包含的科学包包括：conda, numpy, scipy, ipython, notebook, TensorFlow等。它与conda(类似于pip的安装工具)、Anaconda导航器(用于GUI体验)和spyder(用于IDE)一起打包。</p>
-<p>conda：conda是包及其依赖项和环境的管理工具。适用语言：Python, R, Ruby, Lua, Scala, Java, JavaScript, C&#x2F;C++, FORTRAN。用途：快速安装、运行和升级包及其依赖项。在计算机中便捷地创建、保存、加载和切换环境。  conda包和环境管理器包含于Anaconda的所有版本当中。</p>
-<p>pip是用于安装和管理软件包的包管理器。仅适用于Python。Python中默认安装的版本：Python 2.7.9及后续版本：默认安装，命令为pip，Python 3.4及后续版本：默认安装，命令为pip3。pip不一定会展示所需其他依赖包。安装包时或许会直接忽略依赖项而安装，仅在结果中提示错误。在系统自带Python中包的更新&#x2F;回退版本&#x2F;卸载将影响其他程序。</p>
-<p>conda列出所需其他依赖包。 安装包时自动安装其依赖项。可以便捷地在包的不同版本中自由切换。不会影响系统自带Python。conda结合了pip和virtualenv的功能。适用于Python, R, Ruby, Lua, Scala, Java, JavaScript, C&#x2F;C++, FORTRAN。</p>
-<h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><p>系统：window10</p>
-<blockquote>
-<p>Linux的教程其实还是居多，算是一个劣势</p>
-</blockquote>
-<p>安装教程网上很多，不赘述，<strong>主要是在最后有个安装选项</strong>：是否将conda的python作为window的默认全局python，我没有勾选，个人不需要。</p>
-<p>安装完成之后在路径：<code>C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Anaconda3 (64-bit)</code>中，可以找到两个终端，其中一个是带powershell，<strong>我一般用的另一个不带的</strong>，不知道区别是什么，反正conda的指令操作全在这上面完成。</p>
-<p>基础配置：</p>
-<p>打开快捷方式<code>Anaconda Prompt (Miniconda3)</code>的属性把其中的Start in改成你想要的路径，以后打开cmd(后面直接用这个称呼，别和window自带的cmd搞混了)默认的路径就是你这里设置的。</p>
-<p>重点：<code>.condarc</code>文件，<a target="_blank" rel="noopener" href="https://blog.csdn.net/ljx0951/article/details/104121844">解决.condarc文件找不到的问题</a></p>
-<p>虚拟环境安装路径问题：<a target="_blank" rel="noopener" href="https://blog.csdn.net/m0_45176278/article/details/126670991">修改conda默认envs_dirs和pkgs_dirs</a>，这是默认的安装路径，当然可以在指令中加入后缀从而指定安装路径，但是比较麻烦。比如你使用<code>conda create -n a</code>，虚拟环境文件夹的名称为<code>a</code>，它就在<code>envs_dirs</code>中；</p>
-<p>而关于pkgs_dirs的解释可以看下面这个：<a target="_blank" rel="noopener" href="https://blog.csdn.net/nyist_yangguang/article/details/109848366">Anaconda中pkgs文件夹详解</a></p>
-<p><strong>如果需要换回conda的默认源</strong>：<code>text conda config --remove-key channels</code></p>
-<p>如果conda提示你版本需要更新了可以使用这个命令：<code>conda update -n base -c defaults conda</code></p>
-<p><strong>第一个难题：</strong></p>
-<p>源。很多教程都说了，为了加快下载用清华源，但是我一般都是科学上网，所以反倒不想换到清华源，但是科学上网无法使用conda，<a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_44994302/article/details/127716897">【Windows】conda下载慢问题，下载源，代理设置</a>解决了我的问题。</p>
-<blockquote>
-<p>这里给一个Liunx版本的<a target="_blank" rel="noopener" href="https://segmentfault.com/q/1010000008668178?sort=newest&u_atoken">教程</a></p>
-</blockquote>
-<p>我直接贴一下我的.condarc文件配置：</p>
-<figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><code class="hljs txt">show_channel_urls: true<br>envs_dirs:<br>  - D:\CodeField\Python\Conda_dirs\envs_dirs<br>pkgs_dirs:<br>  - D:\CodeField\Python\Conda_dirs\pkgs_dirs<br>channels:<br>  - defaults<br>default_channels:<br>  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/<br>  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/r/<br>  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/msys2/<br>  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/<br>  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/pytorch/<br>custom_channels:<br>  conda-forge: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud<br>  msys2: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud<br>  bioconda: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud<br>  menpo: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud<br>  pytorch: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud<br>  pytorch-lts: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud<br>  simpleitk: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud<br>ssl_verify: false<br>proxy_servers:<br>  http: http://127.0.0.1:33333<br>  https: http://127.0.0.1:33333<br></code></pre></td></tr></table></figure>
-
-<p>安装路径的配置前面我说过了。主要是这个proxy_servers，是根据我自己的代理配置的，后面确实可以用。剩下其实还有两个疑问：<code>ssl_verify</code>与<code>custom_channels</code></p>
-<p><strong>第二个难题：</strong></p>
-<p>这个问题真的是非常狗，再配合上第一个难题，总结下来就是：我TM代理下不成功，逼我用清华源，最后清华源又TM给我安个CPU版本，有想过离线安装，但是配置步骤繁琐，更容易出错，还是使用指令比较好。</p>
-<ul>
-<li>(推荐)<a target="_blank" rel="noopener" href="https://blog.csdn.net/HuangJM3/article/details/123685177">安装GPU版本的pytorch（解决pytorch安装时默认安装CPU版本的问题）</a></li>
-<li>(推荐)<a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_43868021/article/details/122083729">清华源conda 安装gpu版本的pytorch总是推送cpu版本解决办法</a></li>
-<li><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_31239371/article/details/120973871">安装Pytorch后torch.cuda.is_available()返回False问题解决</a></li>
+                <ul>
+<li>针对于主控型号：STM32F334R8T6</li>
+<li>参考手册：HRTIM使用指南中文参考手册(就是边看这个手册边做的记录)</li>
+<li>学习链接：<ul>
+<li><a target="_blank" rel="noopener" href="https://thunderbird1997.gitee.io/2020/01/29/stm32g4-3/#CUBE%E9%85%8D%E7%BD%AE">STM32G4+HAL快速入门（3）：HRTIM基础</a></li>
+<li><a target="_blank" rel="noopener" href="https://bbs.21ic.com/icview-2996654-1-1.html">HAL库的HRTIM源文件stm32h7xx_hal_hrtim.c学习笔记</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/355284722">stm32f334 CubeMx配置高分辨率定时器HRTIM - 知乎</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.cnblogs.com/armfly/p/12401776.html">STM32H7的高分辨率定时器HRTIM应用之PWM实现 </a></li>
 </ul>
+</li>
+</ul>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>功能很复杂，但是基础原理上面和TIM是差不多的，主要在三个方面特化了：</p>
+<ul>
+<li>主从定时器及其相互之间的<strong>共享</strong></li>
+<li>定时器的<strong>频率</strong></li>
+<li>比较寄存器的<strong>数量</strong></li>
+</ul>
+<h2 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h2><p><img src="https://cdn.jsdelivr.net/gh/aqstoner/AqstonerBookAssets@latest/img/202208061959355.png" srcset="/img/loading.gif" lazyload></p>
+<h3 id="系统时钟初始化"><a href="#系统时钟初始化" class="headerlink" title="系统时钟初始化"></a>系统时钟初始化</h3><p>对于定时器而言，时钟是最基础而且重要的配置部分</p>
+<ul>
+<li>一定是经过PLL进行输出<ul>
+<li>来源HSI，244ps最高，144M</li>
+<li>来源HSE，217ps最高，128M</li>
+<li>时钟周期的1&#x2F;32</li>
+</ul>
+</li>
+</ul>
+<h3 id="HRTIM初始化"><a href="#HRTIM初始化" class="headerlink" title="HRTIM初始化"></a>HRTIM初始化</h3><ol>
+<li><p>初始化在两个函数中完成</p>
+<ol>
+<li>HAL_HRTIM_Init</li>
+<li>HAL_HRTIM_MspInit</li>
+</ol>
+</li>
+<li><p>前面进行了系统时钟的初始化，然后进行HRTIM时钟的初始化，分两步</p>
+<ol>
+<li>选择高速PLL输出</li>
+<li>在APB2总线上映射的寄存器进行<strong>时钟使能</strong>(挂载的是高速时钟线)</li>
+</ol>
+</li>
+<li><p>DLL初始化</p>
+<ol>
+<li>省略讲解</li>
+</ol>
+</li>
+<li><p>I&#x2F;O口初始化</p>
+<ol>
+<li>端口<strong>通道映射</strong><ol>
+<li>AF13通道，位于端口A和B</li>
+<li>AF3通道，位于端口C</li>
+</ol>
+</li>
+<li>注意，它的初始化分了两个部分(在不同的阶段)<ol>
+<li>首先HAL_HRTIM_MspInit函数中初始化HRTIM输入</li>
+<li>然后HRTIM输出必须在HRTIM<strong>控制寄存器编程后且当计数器使能</strong>时进行初始化</li>
+<li>原因：保证来自GPIO电路的控制信号传输到HRTIM定时器之前，在HRTIM中能够正确定义输出状态(不理解)</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<p><img src="https://cdn.jsdelivr.net/gh/aqstoner/AqstonerBookAssets@latest/img/202208061717438.png" srcset="/img/loading.gif" lazyload></p>
+<p>问题：为什么HRTIM的时钟明明不经过APB，为什么还需要在初始化的时候进行映射？因为寻址映射还是挂载在APB2上面的吗。</p>
+<ol start="5">
+<li>与其它外设的交互<ol>
+<li>NVIC，HRTIM 中断请求分组为 7 种中断向量。所有错误均分组到一个特殊向量中，可设置为非常高的优先级。与 HRTIM 相关的 NVIC 部分在 HAL_HRTIM_MspInit 函数中进行编程。</li>
+<li>DMA控制器</li>
+<li>内置比较器</li>
+<li>运算放大器</li>
+<li>ADC转换器</li>
+<li>DAC转换器</li>
+<li>通用定时器</li>
+</ol>
+</li>
+</ol>
+<h2 id="工作原理"><a href="#工作原理" class="headerlink" title="工作原理"></a>工作原理</h2><ul>
+<li>6个16位自动重载递增计数器(ABCDE和Master)组成，每个计数器有<strong>四个比较寄存器</strong></li>
+<li>周期寄存器：HRTIM_PERxR，比较寄存器：HRTIM_CMP1xR</li>
+<li>每个定时单元通过置位 &#x2F; 复位纵横开关来控制 2 个输出</li>
+<li>输出级：死区时间，处于保护目的而切断输出</li>
+</ul>
+<p>下面开始最简单的应用——<strong>单个PWM的产生</strong>，包括如下几个方面</p>
+<ul>
+<li>定时器连续模式</li>
+<li>最简单的纵横开关配置</li>
+<li>输出级使能</li>
+</ul>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs C"><span class="hljs-comment">/* TIMD 计数器工作于连续模式 */</span><br>HRTIM1-&gt;sTimerxRegs[HRTIM_TIMERINDEX_TIMER_D].TIMxCR = HRTIM_TIMCR_CONT;<br><span class="hljs-comment">/* 设置周期为 100kHz，且占空比 （CMP1）为 50% */</span><br>HRTIM1-&gt;sTimerxRegs[HRTIM_TIMERINDEX_TIMER_D].PERxR = <span class="hljs-number">0x0000B400</span>;<br>HRTIM1-&gt;sTimerxRegs[HRTIM_TIMERINDEX_TIMER_D].CMP1xR = <span class="hljs-number">0x00005A00</span>;<br><span class="hljs-comment">/* TD1 输出，在 TIMD 周期下置位，在 TIMD CMP1 事件下复位 */</span><br>HRTIM1-&gt;sTimerxRegs[HRTIM_TIMERINDEX_TIMER_D].SETx1R = HRTIM_SET1R_PER;<br>HRTIM1-&gt;sTimerxRegs[HRTIM_TIMERINDEX_TIMER_D].RSTx1R = HRTIM_RST1R_CMP1;<br>HRTIM1-&gt;sMasterRegs.MCR = HRTIM_MCR_TDCEN; <span class="hljs-comment">/* 启动定时器 D */</span><br>HRTIM1-&gt;sCommonRegs.OENR = HRTIM_OENR_TD1OEN; <span class="hljs-comment">/* 使能 TD1 输出 */</span><br>GPIO_HRTIM_outputs_Config(); <span class="hljs-comment">/* 初始化 HRTIM GPIO 输出 */</span><br></code></pre></td></tr></table></figure>
+
+<p>下面是<strong>多个PWM的产生</strong>，包括如下几个方面</p>
+<ul>
+<li>使用多个定时单元</li>
+<li>寄存器预加载</li>
+</ul>
+<p>总结一下，这里主要就是告诉你，可以通过四个比较寄存器的值，然后组合起来设置成<strong>不同情况下的置位以及复位</strong>，就可以得到不同占空比或者不同相位的PWM信号。</p>
+<p>除此之外还有：</p>
+<ul>
+<li>定时器之间的共享</li>
+<li>任意波形的产生</li>
+<li>死区时间</li>
+</ul>
+<p>这些就省略。</p>
+<p>在实际的应用层面有如下：</p>
+<ul>
+<li>电压模式双降压转换器</li>
+<li>同步电压模式降压转换器整流和错误保护</li>
+<li>非反相降压-升压转换器</li>
+<li>过度模式功率因数控制器</li>
+</ul>
+<p>这些就是当你要做相应的项目的时候可以再详细阅读。</p>
+<h2 id="非反相降压-升压转换器"><a href="#非反相降压-升压转换器" class="headerlink" title="非反相降压-升压转换器"></a>非反相降压-升压转换器</h2><p>当CMP1&#x3D;PER时，占空比为100%(CMP1置位事件高于PER复位事件)，硬件优先级方案：当两个事件同时发生时，优先级如下CMP4&gt;CMP3&gt;CMP2&gt;CMP1&gt;PER。</p>
+<p>这个优先级是非常重要的，因为对于非反向降压-升压转换器，一瞬间的错误的MOS管开关情况有可能就会导致电路的损坏，所以需要严格控制MOS管的开关顺序和开关情况，死区区间的设置目的也是这个。</p>
+<p>当CMP1值大于PER值时，占空比为0% （不再产生置位事件）</p>
+<p>对于所有输出， <strong>FAULT1 输入在 PA12 （低电平激活）上使能，可关断 PWM</strong> （低电平敏感）。触发错误时（PA12 输入连接到 GND），TA1、TA2、TB1、TB2 信号停止。可通过按下用户按钮复位系统功能演示。</p>
+<p>我在设计的时候并没有考虑这种硬件层面的保护措施，下次加上去。</p>
 
                 
               </div>
@@ -357,8 +439,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>conda入门配置GPU版本的pytorch</div>
-      <div>https://aqstoner.github.io/2022/11/12/conda入门配置GPU版本的pytorch/</div>
+      <div>STM32的高分辨率定时器</div>
+      <div>https://aqstoner.github.io/2022/11/19/STM32的高分辨率定时器/</div>
     </div>
     <div class="license-meta">
       
@@ -370,7 +452,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2022年11月12日</div>
+          <div>2022年11月19日</div>
         </div>
       
       
@@ -400,18 +482,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2022/11/13/%E7%A1%AC%E4%BB%B6%E9%80%9A%E4%BF%A1%E5%8D%8F%E8%AE%AE%E7%BB%BC%E8%BF%B0/" title="硬件通信协议综述">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">硬件通信协议综述</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2022/10/14/DC-DC%E5%BC%80%E5%85%B3%E7%94%B5%E6%BA%90/" title="DC-DC开关电源">
-                        <span class="hidden-mobile">DC-DC开关电源</span>
+                      <a href="/2022/11/14/STM32%E5%85%A5%E9%97%A8%E4%BB%8B%E7%BB%8D/" title="STM32入门介绍">
+                        <span class="hidden-mobile">STM32入门介绍</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
